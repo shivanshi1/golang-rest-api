@@ -27,31 +27,27 @@ Before running this project, make sure you have the following installed:
 Installation
 
 1. **Clone the repository**
+   git clone https://github.com/shivanshi1/golang-rest-api.git
+   cd golang-rest-api
 
-git clone https://github.com/shivanshi1/golang-rest-api.git
-cd golang-rest-api
+4. **Create and configure the .env file**
+   Copy the example environment file:
+   cp .env.example .env
 
-2. **Create and configure the .env file**
+   Then, update .env with your PostgreSQL database credentials:
 
-Copy the example environment file: 
-cp .env.example .env
-
-Then, update .env with your PostgreSQL database credentials:
-
-DB_HOST=localhost
-DB_USER=your_username
-DB_PASSWORD=your_password
-DB_NAME=golang_api
-DB_PORT=5432
-SSL_MODE=disable
+   DB_HOST=localhost
+   DB_USER=your_username
+   DB_PASSWORD=your_password
+   DB_NAME=golang_api
+   DB_PORT=5432
+   SSL_MODE=disable
 
 3. **Install dependencies**
+   go mod tidy
 
-go mod tidy
-
-4. **Run the Application**
-
-go run main.go
+5. **Run the Application**
+   go run main.go
 
 ## API Endpoints
 
