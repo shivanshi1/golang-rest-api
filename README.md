@@ -24,7 +24,7 @@ Before running this project, make sure you have the following installed:
 
 - Git
 
-Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
